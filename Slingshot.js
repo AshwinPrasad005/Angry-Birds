@@ -14,6 +14,7 @@ class SlingShot{
         World.add(world, this.sling);
     }
     attach(body){
+        Matter.Body.setPosition(body,{x:200,y:50});
         this.sling.bodyA = body;
     }
     
